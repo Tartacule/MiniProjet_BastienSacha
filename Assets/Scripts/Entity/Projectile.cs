@@ -19,10 +19,9 @@ namespace Entity
 
 
         public abstract void Create();
-        
-        public abstract void Launch();
 
         public abstract void Remove();
+        
 
         protected virtual void CheckRotation()
         {

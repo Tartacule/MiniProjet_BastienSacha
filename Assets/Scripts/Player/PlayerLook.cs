@@ -1,12 +1,13 @@
+using Entity;
 using UnityEngine;
 
-public class MouseLook : MonoBehaviour
+public class PlayerLook : MonoBehaviour
 {
     public float mouseSens;
     public Transform tf;
     
     private float _xRotation = 0f;
-    
+     
     // Start is called before the first frame update
     void Start()
     {
