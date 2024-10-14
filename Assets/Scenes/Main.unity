@@ -350,7 +350,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pObject: {fileID: 937029137}
   amount: 5
-  isArmed: 0
 --- !u!1 &937029137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2681293102037998306, guid: f773bf8430b4c8e4da7913828a282267, type: 3}
