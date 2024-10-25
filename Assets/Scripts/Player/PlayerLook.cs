@@ -11,12 +11,11 @@ public class PlayerLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         float mouseX = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
         
@@ -25,6 +24,6 @@ public class PlayerLook : MonoBehaviour
         
         transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
         tf.Rotate(Vector3.up * mouseX);
-        Debug.Log(tf.localRotation);
+        //Debug.Log(tf.localRotation);
     }
 }
