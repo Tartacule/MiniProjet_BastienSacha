@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274dc2a1cb49acc4da733226f22ff46e, type: 3}
+  m_Name: Arrow
+  m_EditorClassIdentifier: 
+  <UISlot>k__BackingField: {fileID: 997685387830505953, guid: 6d702b3c822f9d944806f9bc02e0a078, type: 3}
+  <Name>k__BackingField: Wooden Arrow
+  <Description>k__BackingField: An unimpressive wooden arrow
+  <Icon>k__BackingField: {fileID: 0}

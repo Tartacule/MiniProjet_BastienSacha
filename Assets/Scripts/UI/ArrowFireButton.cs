@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Entity;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace UI

@@ -1,13 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
+using ScriptableObjects;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+namespace Player
 {
-    public List<InventorySlot> slots;
-
-    public bool IsEmpty()
+    [System.Serializable]
+    public class Inventory : MonoBehaviour
     {
-        return (slots.Count == 0) ? true : false;
+        public List<Item> itemList;
+        
+        public bool IsEmpty => itemList.Count == 0;   //Is the inventory empty ?
     }
+    
 }
