@@ -9,6 +9,10 @@ namespace UI
         public ItemPanel panel;
         
         private void OnEnable() {
+            UpdateGUI();
+        }
+
+        public void UpdateGUI() {
             inventory.RemoveEmptySlots();
             ClearGUI();
             PopulateGUI();

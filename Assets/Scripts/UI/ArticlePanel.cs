@@ -21,9 +21,9 @@ public class ArticlePanel : MonoBehaviour
     public Button BuyButton;
     public int index;
 
-    public void SetPanelData(ShopItem item)
+    public void SetPanelData(Shop shop, ShopItem item)
     {
-        _shop = transform.parent.GetComponent<ShopPanel>().shop;
+        _shop = shop;
         _item = item;
         img.sprite = item.SO_ShpSlot.Icon;
         itemName.text = item.SO_ShpSlot.Name;
@@ -34,7 +34,7 @@ public class ArticlePanel : MonoBehaviour
 
     public void Buy()
     {
-        //Test if player has enough money
+        Debug.Log("Buy");
         _shop.Purchase(_item);
     }
 }

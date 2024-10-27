@@ -25,7 +25,7 @@ public class ShopPanel : MonoBehaviour
 
         foreach (ShopItem item in shop.shopList) {
             ArticlePanel ap = Instantiate(panel, this.transform); //Create a new panel
-            ap.SetPanelData(item); //Set all essential data
+            ap.SetPanelData(shop, item); //Set all essential data
             ap.index = i; //Dynamically give indexes to each one
 
             i++;
