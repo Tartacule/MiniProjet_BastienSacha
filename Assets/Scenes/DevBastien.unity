@@ -1029,6 +1029,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 4798926530342849816, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_fontSize
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798926530342849816, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 12229d42f4da75dabbb59c47e899067c, type: 2}
+    - target: {fileID: 4798926530342849816, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798926530342849816, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3096999141164778470, guid: 12229d42f4da75dabbb59c47e899067c, type: 2}
+    - target: {fileID: 4798926530342849816, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4897737714582528631, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
