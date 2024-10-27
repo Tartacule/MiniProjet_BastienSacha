@@ -16,7 +16,6 @@ namespace UI
             {
                 pm.LaunchProjectile();
                 pm.Reset(); 
-                return;
             }
         }
 

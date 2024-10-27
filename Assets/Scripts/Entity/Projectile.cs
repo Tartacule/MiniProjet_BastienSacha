@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Entity
 {
@@ -9,7 +10,7 @@ namespace Entity
     //Can be added as a Component given link to MonoBehaviour
     public abstract class Projectile : MonoBehaviour
     {
-        public string name;
+        public string type;
         public float launchSpeed;
         public int destroyTime;
         public Rigidbody rigidBody;

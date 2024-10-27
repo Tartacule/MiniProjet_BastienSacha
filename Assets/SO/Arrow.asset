@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274dc2a1cb49acc4da733226f22ff46e, type: 3}
   m_Name: Arrow
   m_EditorClassIdentifier: 
-  <UISlot>k__BackingField: {fileID: 997685387830505953, guid: 6d702b3c822f9d944806f9bc02e0a078, type: 3}
+  <Prefab>k__BackingField: {fileID: 2681293102037998306, guid: f773bf8430b4c8e4da7913828a282267, type: 3}
   <Name>k__BackingField: Wooden Arrow
   <Description>k__BackingField: An unimpressive wooden arrow
+  <Price>k__BackingField: 10
   <Icon>k__BackingField: {fileID: 0}

@@ -268,7 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2564103244439636491}
   - component: {fileID: 5861753839218917324}
-  - component: {fileID: 7498487279206277431}
+  - component: {fileID: 7338178509049678608}
   m_Layer: 0
   m_Name: ProjectileManager
   m_TagString: Untagged
@@ -303,12 +303,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e8c69ee2d30dd42909048e6ec64feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pObject: {fileID: 0}
-  amount: 5
-  fullLaunchDelay: 0
+  fullLaunchDelay: 2
   ld: 0
-  InvSlot: {fileID: 0}
---- !u!114 &7498487279206277431
+  inv: {fileID: 7338178509049678608}
+  currentSlot: 0
+--- !u!114 &7338178509049678608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,3 +319,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6fc9a89c7db2ec4781f28d02527c9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemList: []

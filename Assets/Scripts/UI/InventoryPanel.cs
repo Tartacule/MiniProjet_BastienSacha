@@ -1,12 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Player;
-using ScriptableObjects;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace UI
 {
@@ -14,37 +7,31 @@ namespace UI
     {
         public Inventory inventory;
         public ItemPanel panel;
-
-        private void Start() {
+        
+        private void OnEnable() {
+            inventory.RemoveEmptySlots();
+            ClearGUI();
             PopulateGUI();
         }
-    
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
 
-        private void ClearGUI()
-        {
-            
-        }
-
-        private void PopulateGUI()
-        {
-            foreach (Item item in inventory.itemList)
-            {
-                ItemPanel ip = Instantiate(panel, this.transform);
-                ip.SetPanelData(item);
+        private void ClearGUI() {
+            foreach (Transform childPanel in transform) {
+                Debug.Log($"Removed {childPanel.name}");
+                GameObject.Destroy(childPanel.gameObject);
             }
         }
-        
-    /*
-        public List<GameObject> UpdateInventory()
-        {
-            return null;
 
-        }*/
+        private void PopulateGUI() {
+            int i = 0;
+            
+            foreach (Item item in inventory.itemList) {
+                ItemPanel ip = Instantiate(panel, this.transform);  //Create a new panel
+                ip.SetPanelData(item);                              //Set all essential data
+                ip.index = i;                                       //Dynamically give indexes to each one
+
+                i++;
+            }
+        }
     }
 }
 

@@ -7,6 +7,12 @@ using UnityEngine;
 [Serializable]
 public class Item 
 {
-    public InventorySlot SO_InvSlot;
+    public Slot SO_InvSlot;
     public int amount;
+
+    public Item(Slot slot, int amt)
+    {
+        SO_InvSlot = slot;
+        amount = amt;
+    }
 }

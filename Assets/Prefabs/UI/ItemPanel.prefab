@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2925540042323287028}
   - component: {fileID: 1758540089460245449}
   m_Layer: 5
-  m_Name: "quandtit\xE9"
+  m_Name: ObjectAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
+  m_Color: {r: 0.23788798, g: 0.21650317, b: 0.21650317, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -258,7 +258,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2046736872031708504}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8072503600308370935}
+        m_TargetAssemblyTypeName: ItemPanel, Assembly-CSharp
+        m_MethodName: SetSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8072503600308370935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +287,8 @@ MonoBehaviour:
   itemName: {fileID: 4427009125555981319}
   itemDesc: {fileID: 2788628053291535774}
   itemAmount: {fileID: 1758540089460245449}
+  selectButton: {fileID: 6078593266793316812}
+  index: 0
 --- !u!1 &4098012251603961148
 GameObject:
   m_ObjectHideFlags: 0

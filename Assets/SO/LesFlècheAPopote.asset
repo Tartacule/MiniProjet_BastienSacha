@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274dc2a1cb49acc4da733226f22ff46e, type: 3}
   m_Name: "LesFl\xE8cheAPopote"
   m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 2681293102037998306, guid: 3e62cd3151effb91aa8476a66fc8cece, type: 3}
   <Name>k__BackingField: "Les fl\xE8ches de popote"
-  <Description>k__BackingField: mais queque qu'uil est bon ce popote
+  <Description>k__BackingField: "Merci Yvan pour m'avoir aid\xE9 avec l'UI"
+  <Price>k__BackingField: 20
   <Icon>k__BackingField: {fileID: 21300000, guid: aeb6c3f14e56580498b3337382575216, type: 3}

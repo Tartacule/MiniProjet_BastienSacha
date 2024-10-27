@@ -7,13 +7,13 @@ namespace Entity
 {
     public class ProjectileManager : MonoBehaviour
     {   
-        public GameObject pObject;      //Object to be launched
-        public int amount;              //Amount of arrows left
         public float fullLaunchDelay;   //Time to press for full speed launch
         public float ld;                //Actual time held for launch
-
-        public InventorySlot InvSlot;
+        public Inventory inv;           //Inventory to retrieve data from
+        private int _currentSlot;         //Currently selected slot
         
+        private GameObject _pObject;    //Object to be launched
+        private int _amount;            //Amount of arrows left
         private bool _equipped;         //Is an arrow about to be shot ?
         private bool _launched;         //Was the arrow launched ?
 
@@ -32,22 +32,28 @@ namespace Entity
         }
     
         //Create instance of projectile when button is pressed
-        public void StartLaunchProc() {
-            if (_equipped) {
+        public void StartLaunchProc()
+        {
+            _currentSlot = inv.selected;
+            
+            GameObject selectedObject = inv.itemList[_currentSlot].SO_InvSlot.Prefab;
+            
+            if (_equipped || inv.itemList[_currentSlot].amount == 0) {
                 Debug.Log("No arrows Left to shoot!");
             }
             else {
-                pObject = Instantiate(pObject, transform.position, transform.rotation, this.transform);
-                Debug.Log($"Object {pObject} instantiated");
+                _pObject = Instantiate(selectedObject, transform.position, transform.rotation, this.transform);
+                Debug.Log($"Object {_pObject} instantiated");
                 _equipped = true;
-                amount--;
+                
+                inv.itemList[_currentSlot].amount--;
             }
         }
     
         public void LaunchProjectile() {
             //Launches arrow at a fraction of launchSpeed, det. by % of time with btn held
-            float normalizedLaunchSpeed = (ld / fullLaunchDelay) * pObject.GetComponent<Arrow>().launchSpeed;
-            pObject.GetComponent<Arrow>().Launch(normalizedLaunchSpeed);
+            float normalizedLaunchSpeed = (ld / fullLaunchDelay) * _pObject.GetComponent<Arrow>().launchSpeed;
+            _pObject.GetComponent<Arrow>().Launch(normalizedLaunchSpeed);
             _equipped = false;
         }
 
