@@ -10,8 +10,9 @@ namespace Entity
         public float fullLaunchDelay;   //Time to press for full speed launch
         public float ld;                //Actual time held for launch
         public Inventory inv;           //Inventory to retrieve data from
-        private int _currentSlot;         //Currently selected slot
+        public AudioSource bowSound;
         
+        private int _currentSlot;         //Currently selected slot
         private GameObject _pObject;    //Object to be launched
         private int _amount;            //Amount of arrows left
         private bool _equipped;         //Is an arrow about to be shot ?
@@ -54,6 +55,7 @@ namespace Entity
             //Launches arrow at a fraction of launchSpeed, det. by % of time with btn held
             float normalizedLaunchSpeed = (ld / fullLaunchDelay) * _pObject.GetComponent<Arrow>().launchSpeed;
             _pObject.GetComponent<Arrow>().Launch(normalizedLaunchSpeed);
+            bowSound.Play();
             _equipped = false;
         }
 
