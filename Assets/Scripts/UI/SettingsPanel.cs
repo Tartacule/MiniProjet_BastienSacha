@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource music;
+    public Slider musicVolumeSlider;
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+        music.volume = musicVolumeSlider.value;
     }
 }
