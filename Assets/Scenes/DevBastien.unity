@@ -711,6 +711,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SachaUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1681784413588233559, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681784413588233559, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fa6049b9cfcd9b4fbea6062c0f4c30a, type: 3}
     - target: {fileID: 1847971463607733810, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -824,7 +832,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 848968798}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6879916267740839033, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9076ee27dca5e274fb39812935d9f47e, type: 3}
